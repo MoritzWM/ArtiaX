@@ -90,10 +90,10 @@ uninstall app-uninstall:	$(WHEEL)
 docs:
 	$(CHIMERAX_EXE) -m sphinx docs/source src/docs/user
 
-test:
+test:	install
 	$(CHIMERAX_EXE)
 
-debug:
+debug:	install
 	$(CHIMERAX_EXE) --debug
 
 clean:
