@@ -28,7 +28,8 @@ jobs:
 
       - name: Download ChimeraX
         if: steps.cache-chimerax.outputs.cache-hit != 'true'
-        run: wget -O chimerax.deb https://www.cgl.ucsf.edu/chimerax/cgi-bin/secure/chimerax-get.py?file=1.11.1/ubuntu-24.04/ucsf-chimerax_1.11.1ubuntu24.04_amd64.deb
+        run: wget -O chimerax.deb https://heibox.uni-heidelberg.de/f/c1ebfee729a24b3a8998/?dl=1
+
 
       - name: Install ChimeraX
         run: |
